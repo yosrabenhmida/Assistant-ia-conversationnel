@@ -5,7 +5,7 @@ import ChatWindow from "./components/ChatWindow";
 import ChatInput from "./components/ChatInput";
 import Login from "./components/login";
 import Signup from "./components/signup";
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./components/protectedRoute";
 import ProfileMenu from "./components/ProfileMenu";
 
 const API_URL = "http://localhost:3000/api";
