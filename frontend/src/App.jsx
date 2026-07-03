@@ -3,8 +3,8 @@ import { useState, useEffect, useRef } from "react";
 import Sidebar from "./components/Sidebar";
 import ChatWindow from "./components/ChatWindow";
 import ChatInput from "./components/ChatInput";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
+import Login from "./components/login";
+import Signup from "./components/signup";
 import ProtectedRoute from "./components/ProtectedRoute";
 import ProfileMenu from "./components/ProfileMenu";
 
