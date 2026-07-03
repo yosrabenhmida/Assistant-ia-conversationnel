@@ -235,6 +235,10 @@ app.post("/api/conversations", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("API Assistant IA Conversationnel - OK ✅");
+});
+
 app.put("/api/conversations/:id", async (req, res) => {
   const { message } = req.body;
   if (!message)
@@ -405,11 +409,9 @@ app.post(
       return res.status(400).json({ error: "Type de fichier non supporté." });
     } catch (error) {
       console.error("Erreur upload:", error);
-      res
-        .status(500)
-        .json({
-          error: error.message || "Erreur lors du traitement du fichier.",
-        });
+      res.status(500).json({
+        error: error.message || "Erreur lors du traitement du fichier.",
+      });
     }
   },
 );
